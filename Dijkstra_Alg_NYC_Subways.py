@@ -56,12 +56,12 @@ def Dijk_alg_bfs(graph, starting_station, destination_station):
     #if no path is found, return None
     return None, None, None
 
-file_path = 'FINAL_SUBWAY_SEGMENTS.CSV'
+file_path = 'final_subway_segments.csv'
 #file_path = 'FINAL_SUBWAY_SEGMENTS_2.CSV'
 #file_path = 'FINAL_SUBWAY_SEGMENTS_3.CSV'
 subway_graph = parse_subway_csv(file_path)
 starting_station = '96 St'
-destination_station = 'Castle Hill Av4'
+destination_station = 'Castle Hill Av'
 path, total_time, routes = Dijk_alg_bfs(subway_graph, starting_station, destination_station)
 if path:
     print(f"Path from {starting_station} to {destination_station}: {path} with total travel time: {total_time} minutes")
