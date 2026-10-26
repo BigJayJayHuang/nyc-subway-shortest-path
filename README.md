@@ -42,7 +42,7 @@ Running the script from `96 St` to `Castle Hill Av` returns a 7-station route th
 ## Repository contents
 
 ```text
-graph-algorithms-application/
+nyc-subway-shortest-path/
 ├── README.md
 ├── Dijkstra_Alg_NYC_Subways.py
 └── final_subway_segments.csv
